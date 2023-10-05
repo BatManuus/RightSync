@@ -1,97 +1,285 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen -  Info Cards Concept</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>RightSync</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <div class="card">
-    <h2>North</h2>
-    <i class="fas fa-arrow-right"></i>
-    <p>a lonely trip.</p>
-    <div class="pic"></div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="social">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-github"></i>
+      
+      <!-- style css -->
+
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->    
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="img/logo_black.png" type="image/gif" />
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div> -->  
+      <!-- end loader -->
+      <!-- header -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class=" col-md-2 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="img/logo_full.png" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-8 col-sm-12">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item ">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="chatbot.html">ChatBOT</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="ipc.html">IPC</a>
+                           </li>
+                           <li class="nav-item active">
+                              <a class="nav-link" href="contact.html">Contact Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-md-2">
+                  <ul class="email text_align_right">
+                     <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                     <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br><br><br><br><br><br>
+      <!-- end header inner -->
+      <!-- contact -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-family-tab" data-toggle="tab" href="#nav-family" role="tab" aria-controls="nav-family" aria-selected="true">Family</a>
+                  <a class="nav-item nav-link" id="nav-property-tab" data-toggle="tab" href="#nav-property" role="tab" aria-controls="nav-property" aria-selected="false">Property</a>
+                  <a class="nav-item nav-link" id="nav-criminal-tab" data-toggle="tab" href="#nav-criminal" role="tab" aria-controls="nav-criminal" aria-selected="false">Criminal</a>
+                  <a class="nav-item nav-link" id="nav-labor-tab" data-toggle="tab" href="#nav-labor" role="tab" aria-controls="nav-labor" aria-selected="false">Labor</a>
+                </div>
+              </nav>
+              <div class="tab-content py-0 px-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-family" role="tabpanel" aria-labelledby="nav-family-tab">
+
+                  <div class="d-flex flex-items-center flex-column mt-0"> 
+                    <details class="details-overlay"> 
+                      <summary class="btn-custom">Hindu Marriage Act, 1955</summary> 
+                      <div class="border p-2"> 
+                        <h3>Hindu Marriage Act, 1955</h3> 
+                        <p>This act governs the solemnization and registration of Hindu marriages. It also deals with issues like divorce, maintenance, and custody of children among Hindus. It applies to Hindus, Buddhists, Jains, and Sikh.</p> 
+                      </div> 
+                    </details> 
+                  </div>
+
+                  <div class="d-flex flex-items-center flex-column mt-0"> 
+                    <details class="details-overlay"> 
+                      <summary class="btn-custom">Dissolution of Muslim Marriages Act, 1939</summary> 
+                      <div class="border p-2"> 
+                        <h3>Dissolution of Muslim Marriages Act, 1939</h3> 
+                        <p>This act provides grounds and procedures for Muslim women to seek the dissolution of their marriages. It addresses issues such as divorce and maintenance under Islamic law.</p> 
+                      </div> 
+                    </details> 
+                  </div>
+
+                  <div class="d-flex flex-items-center flex-column mt-0"> 
+                    <details class="details-overlay"> 
+                      <summary class="btn-custom">Special Marriage Act, 1954</summary> 
+                      <div class="border p-2"> 
+                        <h3>Special Marriage Act, 1954</h3> 
+                        <p>The Special Marriage Act allows individuals from different religions or those wishing to marry outside their faith to do so. It provides for marriage registration and sets out the rules for interfaith marriages.</p> 
+                      </div> 
+                    </details> 
+                  </div>
+
+                  <div class="d-flex flex-items-center flex-column mt-0"> 
+                    <details class="details-overlay"> 
+                      <summary class="btn-custom">Protection of Women from Domestic Violence Act, 2005</summary> 
+                      <div class="border p-2"> 
+                        <h3>Protection of Women from Domestic Violence Act, 2005</h3> 
+                        <p>This act is not strictly a family law but is related to family matters. It aims to protect women from domestic violence and provides for restraining orders, maintenance, and residence orders.</p> 
+                      </div> 
+                    </details> 
+                  </div>
+
+                  <div class="d-flex flex-items-center flex-column mt-0"> 
+                    <details class="details-overlay"> 
+                      <summary class="btn-custom">Guardians and Wards Act, 1890</summary> 
+                      <div class="border p-2"> 
+                        <h3>Guardians and Wards Act, 1890</h3> 
+                        <p>This act deals with the appointment and powers of guardians for the care of minor children. It also outlines the responsibilities and authority of such guardians.</p> 
+                      </div> 
+                    </details> 
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-property" role="tabpanel" aria-labelledby="nav-property-tab">
+                  Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                </div>
+                <div class="tab-pane fade" id="nav-criminal" role="tabpanel" aria-labelledby="nav-criminal-tab">
+                  Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                </div>
+                <div class="tab-pane fade" id="nav-labor" role="tabpanel" aria-labelledby="nav-about-tab">
+                  Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                </div>
+              </div>
+            
+            </div>
+          </div>
     </div>
-    <button>
-    </button>
-  </div>
-    <div class="card card2">
-    <h2>Vauxhall</h2>
-    <i class="fas fa-arrow-right"></i>
-    <p>a lonely trip.</p>
-    <div class="pic"></div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="social">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-github"></i>
-    </div>
-    <button>
-    </button>
   </div>
 </div>
 
-<a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" alt=""></a>
-<!-- partial -->
-  
-</body>
+        <!-- <div class="class">
+          <div class="container">
+             <div class="row">
+                <div class="col-md-12">
+                   <div class="titlepage text_align_center">
+                      <h2>Family Law</h2>
+                   </div>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-mb-3 margi_bottom">
+                   <div class="class_box blue text_align_center">
+                      <h3>Section 2(s) of the Industrial Disputes Act, 1947: Definition of Workman</h3>
+                      <p>Section 2(s) of the Industrial Disputes Act, 1947, provides the definition of a "workman." In short, 
+                        it defines a workman as any person, including an apprentice, employed in an industry to do manual, unskilled, 
+                        skilled, technical, operational, or clerical work, whether the terms of employment are express or implied. 
+                        However, it excludes certain categories of employees like supervisors or those mainly in managerial or 
+                        administrative roles, those engaged in a primarily supervisory role, and those drawing wages above a 
+                        specified limit. This definition is important for determining who falls under the purview of the Industrial
+                         Disputes Act and is eligible for its protections and benefits.</p>
+                   </div>
+                   </div>
+             </div>
+             
+          </div>
+       </div> -->
+      </section>
+      <!-- contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 ">
+                     <div class="infoma">
+                        <h3>Contact Us</h3>
+                        <ul class="conta">
+                           <li><i class="fa fa-search" aria-hidden="true"></i> Questions? faq.rightsync@gmail.com
+                           </li>
+                           <li><i class="fa fa-phone" aria-hidden="true"></i>Call +91-9987744781</li>
+                           <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="Javascript:void(0)"> rightsync@gmail.com</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="row border_left">
+                        <div class="col-md-12">
+                           <div class="infoma">
+                              <h3>Newsletter</h3>
+                              <form class="form_subscri">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                    </div>
+                                    <div class="col-md-4">
+                                       <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
+                                    </div>
+                                    <div class="col-md-4">
+                                       <button class="subsci_btn">subscribe</button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="infoma">
+                              <h3>Useful Link</h3>
+                              <ul class="fullink">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li><a href="chatbot.html">ChatBOT</a></li>
+                                 <li><a href="ipc.html">IPC</a></li>
+                                 <li><a href="contact.html">Contact Us</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="infoma text_align_left">
+                              <ul class="social_icon">
+                                 <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                 <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2023 All Rights Reserved. <a href="https://html.design/">RightSync</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/custom.js"></script>
+      <script>
+         AOS.init();
+      </script>
+   </body>
 </html>
